@@ -1,0 +1,17 @@
+{
+  "name": "dms-mongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node documentManagerSpec.js --forceexit --verbose"
+  },
+  "author": "Toyin",
+  "license": "ISC",
+  "dependencies": {
+    "jasmine": "^2.3.2",
+    "mongoose": "^4.1.12",
+    "promise": "^7.0.4",
+    "shelljs": "^0.5.3"
+  }
+}

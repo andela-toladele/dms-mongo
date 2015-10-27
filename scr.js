@@ -148,7 +148,7 @@ target.createDocument = function(args) {
 target.getAllDocuments = function(args) {
 
   mongoose.connect('mongodb://localhost/dmsapitestdb');
-  documentManager.getAllDocuments(args[0])
+  documentManager.getAllDocuments(args ? args[0]: 0)
     .then(function(docs) {
       echo('[\n');
       docs.forEach(function(doc) {
